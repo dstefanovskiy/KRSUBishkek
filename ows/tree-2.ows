@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="Paint Data" position="(67.0, 26.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owpaintdata.OWPaintData" title="Paint Data" version="" />
+		<node id="1" name="Test &amp; Score" position="(426.0, 295.0)" project_name="Orange3" qualified_name="Orange.widgets.evaluate.owtestlearners.OWTestLearners" title="Test &amp; Score" version="" />
+		<node id="2" name="Tree" position="(120.0, 246.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" title="Tree" version="" />
+		<node id="3" name="Neural Network" position="(111.0, 348.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owneuralnetwork.OWNNLearner" title="Neural Network" version="" />
+		<node id="4" name="AdaBoost" position="(114.0, 450.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owadaboost.OWAdaBoost" title="AdaBoost" version="" />
+		<node id="5" name="Naive Bayes" position="(105.0, 552.0)" project_name="Orange3" qualified_name="Orange.widgets.model.ownaivebayes.OWNaiveBayes" title="Naive Bayes" version="" />
+		<node id="6" name="Data Table" position="(449.0, 90.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="7" name="Confusion Matrix" position="(612.0, 258.0)" project_name="Orange3" qualified_name="Orange.widgets.evaluate.owconfusionmatrix.OWConfusionMatrix" title="Confusion Matrix" version="" />
+		<node id="8" name="SVM" position="(107.0, 656.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owsvm.OWSVM" title="SVM" version="" />
+		<node id="9" name="Constant" position="(208.0, 693.0)" project_name="Orange3" qualified_name="Orange.widgets.model.owconstant.OWConstant" title="Constant" version="" />
+		<node id="10" name="Paint Data" position="(156.0, 113.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owpaintdata.OWPaintData" title="Paint Data (1)" version="" />
+		<node id="11" name="Predictions" position="(648.0, 407.0)" project_name="Orange3" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" title="Predictions" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Learner" sink_node_id="1" source_channel="Learner" source_node_id="2" />
+		<link enabled="true" id="1" sink_channel="Learner" sink_node_id="1" source_channel="Learner" source_node_id="3" />
+		<link enabled="true" id="2" sink_channel="Learner" sink_node_id="1" source_channel="Learner" source_node_id="4" />
+		<link enabled="true" id="3" sink_channel="Learner" sink_node_id="1" source_channel="Learner" source_node_id="5" />
+		<link enabled="true" id="4" sink_channel="Data" sink_node_id="6" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="5" sink_channel="Evaluation Results" sink_node_id="7" source_channel="Evaluation Results" source_node_id="1" />
+		<link enabled="true" id="6" sink_channel="Learner" sink_node_id="1" source_channel="Learner" source_node_id="8" />
+		<link enabled="true" id="7" sink_channel="Learner" sink_node_id="1" source_channel="Learner" source_node_id="9" />
+		<link enabled="true" id="8" sink_channel="Data" sink_node_id="11" source_channel="Predictions" source_node_id="1" />
+		<link enabled="true" id="9" sink_channel="Data" sink_node_id="6" source_channel="Data" source_node_id="10" />
+		<link enabled="true" id="10" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'attr1': 'X', 'attr2': 'Y', 'autocommit': True, 'brushRadius': 63, 'controlAreaVisible': True, 'data': [[0.22633145615446498, 0.5875327771156139, 0.0], [0.273515687851971, 0.6088081048867701, 0.0], [0.343266291230893, 0.6316030989272945, 0.0], [0.44584070796460173, 0.6422407628128726, 0.0], [0.5155913113435237, 0.6300834326579262, 0.0], [0.5730329847144006, 0.5844934445768774, 0.0], [0.5832904263877715, 0.5404231227651968, 0.0], [0.601753821399839, 0.4614004767580454, 0.0], [0.5627755430410297, 0.4203694874851014, 0.0], [0.23043443282381335, 0.5100297973778309, 0.0], [0.27146419951729683, 0.5632181168057212, 0.0], [0.3473692679002413, 0.5860131108462456, 0.0], [0.4109654062751407, 0.5966507747318237, 0.0], [0.4786645213193885, 0.5996901072705603, 0.0], [0.5299517296862429, 0.5768951132300358, 0.0], [0.5586725663716814, 0.505470798569726, 0.0], [0.5237972646822203, 0.40821215733015503, 0.0], [0.3801930812550281, 0.3960548271752087, 0.0], [0.44584070796460173, 0.3945351609058404, 0.0], [0.35967819790828637, 0.49939213349225275, 1.0], [0.4048109412711182, 0.4963528009535162, 1.0], [0.42942880128720834, 0.5145887961859357, 1.0], [0.40891391794046655, 0.5373837902264602, 1.0], [0.38634754625905066, 0.4614004767580454, 1.0], [0.3268543845534995, 0.45684147794994057, 1.0], [0.1935076427996782, 0.7015077473182361, 2.0], [0.320699919549477, 0.6923897497020263, 2.0], [0.38634754625905066, 0.7091060786650776, 2.0], [0.6407320997586483, 0.7106257449344459, 2.0], [0.9320434432823812, 0.9674493444576877, 2.0]], 'density': 28, 'hasAttr2': True, 'labels': ['C1', 'C2', 'C3'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03"\x00\x00\x01%\x00\x00\x06g\x00\x00\x047\x00\x00\x03"\x00\x00\x01J\x00\x00\x06g\x00\x00\x047\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03"\x00\x00\x01J\x00\x00\x06g\x00\x00\x047', 'symbol_size': 10, 'table_name': 'Painted data', '__version__': 1}</properties>
+		<properties format="pickle" node_id="1">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYlYDQAAAGN2X3N0cmF0aWZpZWRxAolYBwAA
+AG5fZm9sZHNxA0sDWAkAAABuX3JlcGVhdHNxBEsDWAoAAAByZXNhbXBsaW5ncQVLAFgLAAAAc2Ft
+cGxlX3NpemVxBksHWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQdDQgHZ0MsAAwAAAAAEFQAAAY4A
+AAbZAAADowAABBUAAAGzAAAG2QAAA6MAAAAAAAAAAAeAAAAEFQAAAbMAAAbZAAADo3EIWAwAAABz
+aG93bl9zY29yZXNxCWNidWlsdGlucwpzZXQKcQpdcQsoWAIAAABDQXEMWAkAAABQcmVjaXNpb25x
+DVgGAAAAUmVjYWxscQ5YAwAAAE1TRXEPWAMAAABNQUVxEFgDAAAAQVVDcRFYBAAAAFJNU0VxElgC
+AAAAUjJxE1gCAAAARjFxFGWFcRVScRZYEgAAAHNodWZmbGVfc3RyYXRpZmllZHEXiVgLAAAAX192
+ZXJzaW9uX19xGEsDWBAAAABjb250ZXh0X3NldHRpbmdzcRldcRpjT3JhbmdlLndpZGdldHMuc2V0
+dGluZ3MKQ29udGV4dApxGymBcRx9cR0oWAQAAAB0aW1lcR5HQdc8Lppof6lYBgAAAHZhbHVlc3Ef
+fXEgKFgPAAAAY2xhc3Nfc2VsZWN0aW9ucSFYFgAAAChBdmVyYWdlIG92ZXIgY2xhc3NlcylxIkr/
+////hnEjWAwAAABmb2xkX2ZlYXR1cmVxJE5K/v///4ZxJVgVAAAAZm9sZF9mZWF0dXJlX3NlbGVj
+dGVkcSaJSv7///+GcSdoGEsDdVgKAAAAYXR0cmlidXRlc3EoWAEAAABYcSlLAoZxKlgBAAAAWXEr
+SwKGcSyGcS1YBQAAAG1ldGFzcS4pWAoAAABjbGFzc192YXJzcS9YBQAAAENsYXNzcTBLAYZxMYVx
+MnViYXUu
+</properties>
+		<properties format="literal" node_id="2">{'auto_apply': True, 'binary_trees': False, 'controlAreaVisible': True, 'learner_name': 'Tree', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 5, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xe0\x00\x00\x00\xeb\x00\x00\x04\xb1\x00\x00\x02\xac\x00\x00\x02\xe0\x00\x00\x01\x05\x00\x00\x04\xb1\x00\x00\x02\xac\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\xe0\x00\x00\x01\x05\x00\x00\x04\xb1\x00\x00\x02\xac', 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties format="literal" node_id="3">{'activation_index': 3, 'alpha_index': 0, 'auto_apply': True, 'controlAreaVisible': True, 'hidden_layers_input': '100,', 'learner_name': 'Neural Network', 'max_iterations': 200, 'replicable': True, 'savedWidgetGeometry': None, 'solver_index': 2, '__version__': 1}</properties>
+		<properties format="literal" node_id="4">{'algorithm_index': 1, 'auto_apply': True, 'controlAreaVisible': True, 'learner_name': 'AdaBoost', 'learning_rate': 1.0, 'loss_index': 0, 'n_estimators': 50, 'random_seed': 0, 'savedWidgetGeometry': None, 'use_random_seed': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="5">{'auto_apply': True, 'controlAreaVisible': True, 'learner_name': 'Naive Bayes', 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties format="pickle" node_id="6">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgOAAAAY29sb3JfYnlfY2xhc3NxAohYEgAAAGNvbnRy
+b2xBcmVhVmlzaWJsZXEDiFgOAAAAZGlzdF9jb2xvcl9SR0JxBChL3EvcS9xL/3RxBVgTAAAAc2F2
+ZWRXaWRnZXRHZW9tZXRyeXEGQ0IB2dDLAAMAAAAAAYwAAADmAAAFxQAAAzYAAAGMAAAA5gAABcUA
+AAM2AAAAAAAAAAAHgAAAAYwAAADmAAAFxQAAAzZxB1gLAAAAc2VsZWN0X3Jvd3NxCIhYDQAAAHNl
+bGVjdGVkX2NvbHNxCV1xClgNAAAAc2VsZWN0ZWRfcm93c3ELXXEMWBUAAABzaG93X2F0dHJpYnV0
+ZV9sYWJlbHNxDYhYEgAAAHNob3dfZGlzdHJpYnV0aW9uc3EOiFgLAAAAX192ZXJzaW9uX19xD0sB
+WBAAAABjb250ZXh0X3NldHRpbmdzcRBdcRFjT3JhbmdlLndpZGdldHMuc2V0dGluZ3MKQ29udGV4
+dApxEimBcRN9cRQoWAQAAAB0aW1lcRVHQdc8LpbKoaBYBgAAAHZhbHVlc3EWfXEXaA9LAXNYCgAA
+AGF0dHJpYnV0ZXNxGH1xGShYAQAAAFhxGksCWAEAAABZcRtLAlgFAAAAQ2xhc3NxHF1xHShYAgAA
+AEMxcR5YAgAAAEMycR9YAgAAAEMzcSBldVgFAAAAbWV0YXNxIX1xInViYXUu
+</properties>
+		<properties format="pickle" node_id="7">gAN9cQAoWBIAAABhcHBlbmRfcHJlZGljdGlvbnNxAYhYFAAAAGFwcGVuZF9wcm9iYWJpbGl0aWVz
+cQKJWAoAAABhdXRvY29tbWl0cQOIWBIAAABjb250cm9sQXJlYVZpc2libGVxBIhYEwAAAHNhdmVk
+V2lkZ2V0R2VvbWV0cnlxBUNCAdnQywADAAAAAANvAAABWQAABooAAAODAAADbwAAAX4AAAaKAAAD
+gwAAAAAAAAAAB4AAAANvAAABfgAABooAAAODcQZYEAAAAHNlbGVjdGVkX2xlYXJuZXJxB2Njb3B5
+cmVnCl9yZWNvbnN0cnVjdG9yCnEIY2J1aWx0aW5zCmxpc3QKcQloCSmHcQpScQtLAGFYEQAAAHNl
+bGVjdGVkX3F1YW50aXR5cQxLAFgLAAAAX192ZXJzaW9uX19xDUsBWBAAAABjb250ZXh0X3NldHRp
+bmdzcQ5dcQ9jT3JhbmdlLndpZGdldHMuc2V0dGluZ3MKQ29udGV4dApxECmBcRF9cRIoWAQAAAB0
+aW1lcRNHQdc8LptTd5JYBgAAAHZhbHVlc3EUfXEVKFgJAAAAc2VsZWN0aW9ucRZjYnVpbHRpbnMK
+c2V0CnEXXXEYhXEZUnEaaA1LAXVYBwAAAGNsYXNzZXNxG11xHChYAgAAAEMxcR1YAgAAAEMycR5Y
+AgAAAEMzcR9ldWJhdS4=
+</properties>
+		<properties format="literal" node_id="8">{'C': 1.0, 'auto_apply': True, 'coef0': 0.0, 'controlAreaVisible': True, 'degree': 3, 'epsilon': 0.1, 'gamma': 0.0, 'kernel_type': 0, 'learner_name': 'SVM', 'limit_iter': True, 'max_iter': 100, 'nu': 0.5, 'nu_C': 1.0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xe9\x00\x00\x00\xc3\x00\x00\x04\xaf\x00\x00\x03?\x00\x00\x02\xe9\x00\x00\x00\xc3\x00\x00\x04\xaf\x00\x00\x03?\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\xe9\x00\x00\x00\xc3\x00\x00\x04\xaf\x00\x00\x03?', 'svm_type': 0, 'tol': 0.001, '__version__': 1}</properties>
+		<properties format="literal" node_id="9">{'auto_apply': True, 'controlAreaVisible': True, 'learner_name': 'Constant', 'savedWidgetGeometry': None, '__version__': 1}</properties>
+		<properties format="literal" node_id="10">{'attr1': 'X', 'attr2': 'Y', 'autocommit': True, 'brushRadius': 63, 'controlAreaVisible': True, 'data': [[0.22936440260299196, 0.4213473842022773, 0.0], [0.1864017057685781, 0.4611052734777924, 0.0], [0.22496363266040265, 0.37387972750664766, 0.0], [0.15452642667503316, 0.35671862610502714, 0.0], [0.1558700106578215, 0.33549394806160904, 0.0], [0.16722547779346444, 0.45445265553992253, 0.0], [0.3477108865390253, 0.38895668768263264, 0.0], [0.305119149917098, 0.3272169972823829, 0.0], [0.19578464860915923, 0.36987962032377175, 0.0], [0.20994042183114825, 0.4230991046648143, 0.0], [0.21288949152495215, 0.47168655035827367, 0.0], [0.1885684159034096, 0.3871763558850317, 0.0], [0.49749709233736616, 0.6933195628821209, 0.0], [0.5302819016460169, 0.6581368164664919, 0.0], [0.6589466902272272, 0.6491577076754182, 0.0], [0.5910181033854798, 0.6609606354339328, 0.0], [0.6085680791310403, 0.5867943077853326, 0.0], [0.6400705366555874, 0.6044538622540793, 0.0], [0.5589410592052624, 0.6727693474125809, 0.0], [0.5497855015504465, 0.7075196291216175, 0.0], [0.13416092406850605, 0.8202495360179778, 1.0], [0.114747236881976, 0.8686655539467343, 1.0], [0.14732377353953938, 0.8536658435545167, 1.0], [0.08320464978871296, 0.7853501106027461, 1.0], [0.11311359144775647, 0.8382321538270487, 1.0], [0.07674962255347961, 0.7770221372090913, 1.0], [0.07577423190122862, 0.82919346271365, 1.0], [0.12195817868360277, 0.8448273983517911, 1.0], [0.14108313119289773, 0.8483425576998869, 1.0], [0.0947103089636041, 0.840583695219283, 1.0], [0.08237760201980457, 0.8379511782362121, 1.0], [0.10290341742888104, 0.8270559223446385, 1.0], [0.7896831722951122, 0.20005357312173602, 2.0], [0.7375058736263778, 0.22086872126487858, 2.0], [0.7943551631150647, 0.23076533239102562, 2.0], [0.7272320030969882, 0.24718975300576623, 2.0], [0.7881547835592886, 0.20686334476608487, 2.0], [0.8546441618379411, 0.21616876383157374, 2.0], [0.7698197537977763, 0.13771192513687397, 2.0], [0.7521335032404697, 0.14318401022505237, 2.0], [0.7907007840707351, 0.16564003103811967, 2.0], [0.7690278992174745, 0.08056488076006649, 2.0], [0.6964365206359887, 0.22092844523248512, 2.0], [0.6945707189092486, 0.14852455829828792, 2.0]], 'density': 28, 'hasAttr2': True, 'labels': ['C1', 'C2', 'C3'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xe8\x00\x00\x00\xdb\x00\x00\x05\x8e\x00\x00\x03\xe7\x00\x00\x00\xe8\x00\x00\x01\x00\x00\x00\x05\x8e\x00\x00\x03\xe7\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x00\xe8\x00\x00\x01\x00\x00\x00\x05\x8e\x00\x00\x03\xe7', 'symbol_size': 10, 'table_name': 'Painted data', '__version__': 1}</properties>
+		<properties format="literal" node_id="11">{'controlAreaVisible': True, 'draw_dist': True, 'output_attrs': True, 'output_predictions': True, 'output_probabilities': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00,\x00\x00\x00@\x00\x00\x07\x7f\x00\x00\x047\x00\x00\x00,\x00\x00\x00@\x00\x00\x07\x7f\x00\x00\x047\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x00,\x00\x00\x00@\x00\x00\x07\x7f\x00\x00\x047', 'show_attrs': False, 'show_predictions': True, 'show_probabilities': True, '__version__': 1, 'context_settings': []}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

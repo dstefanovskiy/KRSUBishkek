@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="Yahoo Finance" position="(105.0, 105.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owyahoofinance.OWYahooFinance" title="Yahoo Finance" version="" />
+		<node id="1" name="Model Evaluation" position="(515.0, 253.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owmodelevaluation.OWModelEvaluation" title="Model Evaluation" version="" />
+		<node id="2" name="ARIMA Model" position="(197.0, 324.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owarimamodel.OWARIMAModel" title="ARIMA Model" version="" />
+		<node id="3" name="VAR Model" position="(246.0, 427.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owvarmodel.OWVARModel" title="VAR Model" version="" />
+		<node id="4" name="Seasonal Adjustment" position="(384.0, 78.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owseasonaladjustment.OWSeasonalAdjustment" title="Seasonal Adjustment" version="" />
+		<node id="5" name="Moving Transform" position="(275.0, 200.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owmovingtransform.OWMovingTransform" title="Moving Transform" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Time series model" sink_node_id="1" source_channel="Time series model" source_node_id="2" />
+		<link enabled="true" id="1" sink_channel="Time series model" sink_node_id="1" source_channel="Time series model" source_node_id="3" />
+		<link enabled="true" id="2" sink_channel="Time series" sink_node_id="4" source_channel="Time series" source_node_id="0" />
+		<link enabled="true" id="3" sink_channel="Time series" sink_node_id="5" source_channel="Time series" source_node_id="0" />
+		<link enabled="true" id="4" sink_channel="Time series" sink_node_id="1" source_channel="Time series" source_node_id="5" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'controlAreaVisible': True, 'date_from': '2014-05-30', 'date_to': '2019-05-29', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03@\x00\x00\x01\x9c\x00\x00\x04X\x00\x00\x02f\x00\x00\x03@\x00\x00\x01\x9c\x00\x00\x04X\x00\x00\x02f\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03@\x00\x00\x01\x9c\x00\x00\x04X\x00\x00\x02f', 'symbols': ['AMZN', 'AAPL', 'GOOG', 'FB', 'SPY', '^DJI', '^TNX'], '__version__': 1}</properties>
+		<properties format="literal" node_id="1">{'autocommit': True, 'controlAreaVisible': True, 'forecast_steps': 3, 'n_folds': 20, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x87\x00\x00\x01u\x00\x00\x06_\x00\x00\x03^\x00\x00\x02\x87\x00\x00\x01\x9a\x00\x00\x06_\x00\x00\x03^\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\x87\x00\x00\x01\x9a\x00\x00\x06_\x00\x00\x03^', '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'autocommit': True, 'controlAreaVisible': True, 'd': 0, 'forecast_confint': 95, 'forecast_steps': 3, 'learner_name': '', 'p': 1, 'q': 0, 'savedWidgetGeometry': None, 'use_exog': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="3">{'autocommit': True, 'controlAreaVisible': True, 'forecast_confint': 95, 'forecast_steps': 3, 'ic': 0, 'learner_name': '', 'maxlags': 1, 'savedWidgetGeometry': None, 'trend': 0, '__version__': 1}</properties>
+		<properties format="literal" node_id="4">{'autocommit': False, 'controlAreaVisible': True, 'decomposition': 0, 'n_periods': 12, 'savedWidgetGeometry': None, 'selected': [], '__version__': 1}</properties>
+		<properties format="literal" node_id="5">{'autocommit': True, 'controlAreaVisible': True, 'fixed_wlen': 11, 'last_win_width': 5, 'non_overlapping': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xeb\x00\x00\x00\xb0\x00\x00\x04\xac\x00\x00\x03,\x00\x00\x02\xeb\x00\x00\x00\xd5\x00\x00\x04\xac\x00\x00\x03,\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02\xeb\x00\x00\x00\xd5\x00\x00\x04\xac\x00\x00\x03,', 'transformations': [], '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
